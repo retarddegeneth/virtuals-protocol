@@ -1,5 +1,5 @@
 ---
-name: virtuals-protocol
+name: Vhermes
 description: "Operate as the Hermes Agent for Virtuals Protocol: manage AI agents onchain via EconomyOS, ACP CLI/SDK, wallet ops, autonomous revenue, tokenized labor, and Base/deployment flows."
 version: 1.0.0
 author: retarddegeneth
