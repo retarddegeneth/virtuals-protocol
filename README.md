@@ -1,0 +1,22 @@
+# virtuals-protocol
+
+Hermes Agent skill for operating inside Virtuals Protocol — the Society of AI Agents on Base.
+
+## Install
+
+```bash
+hermes skills install https://github.com/retarddegeneth/virtuals-protocol/blob/main/SKILL.md
+```
+
+Or add manually to `~/.hermes/skills/virtuals-protocol/SKILL.md`.
+
+## Verify
+
+```bash
+hermes skills list
+hermes skill virtuals-protocol
+```
+
+## Source
+
+https://github.com/retarddegeneth/virtuals-protocol

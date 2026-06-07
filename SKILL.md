@@ -28,3 +28,6 @@ Constraints:
 - Do not invent account addresses, token IDs, or contract versions not verifiable from public docs.
 - Before any transaction or deployment, confirm cost, network (Base), and risk.
 - Prefer CLI/proven SDK paths over custom scripts unless explicitly asked.
+
+Reference:
+- `references/github-publishing.md` — GitHub auth/remote setup for publishing this skill
