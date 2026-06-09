@@ -29,5 +29,20 @@ Constraints:
 - Before any transaction or deployment, confirm cost, network (Base), and risk.
 - Prefer CLI/proven SDK paths over custom scripts unless explicitly asked.
 
-Reference:
+References:
 - `references/github-publishing.md` — GitHub auth/remote setup for publishing this skill
+- `references/telegram-bot.md` — Telegram chatbot patterns, command verification, and handler layout for VHermes
+- `references/verifying-command-sources.md` — Do-not-blind-patch checklist for missing command definitions
+
+## Telegram Bot Command Addition Workflow
+
+When asked to add/update a TG bot command (e.g. `/vtg`):
+
+1. Search the repo for command definitions first
+   - `gh search code "<term>" --repo OWNER/REPO --limit 50`
+2. Check all tracked raw files for command strings
+3. Check the local bot handlers (`handlers/*.py`) for existing command patterns
+4. **Do not patch handlers blindly** if the command is not defined in source — ask for the exact definition or expected behavior
+5. Once behavior is known, add `CommandHandler("<cmd>", handler)` in `main.py` and implement the handler in `handlers/onboarding.py`
+
+This prevents hallucinating commands that do not exist in the source repo.
