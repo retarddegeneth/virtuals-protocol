@@ -12,3 +12,4 @@ If a Telegram bot command is referenced but not present in the repo, do not patc
 - Confirmed absent from `retarddegeneth/virtuals-protocol` (searched tree + raw files + file search).
 - Confirmed absent from local `~/vhermes-telegram-bot/handlers/onboarding.py`.
 - Stored in this reference so future sessions do not repeat blind patches.
+
